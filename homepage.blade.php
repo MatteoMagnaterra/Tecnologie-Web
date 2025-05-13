@@ -120,6 +120,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="pt-2">
+                     <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">Chi siamo</a>
+                </div>
             </div>
         </div>
     </div>
@@ -127,83 +130,31 @@
     
 
     <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Servizi</h5>
-                <h1 class="display-4">Prestazioni mediche eccellenti</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-heartbeat text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Cardiologia</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-bone text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Ortopedia</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-brain text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Neurologia</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-baby text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Pediatria</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-lungs text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Pneumologia</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-x-ray text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Radiologia</h4>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Servizi</h5>
+            <h1 class="display-4">Prestazioni mediche eccellenti</h1>
+        </div>
+
+        <!-- Immagine tra titoli e pulsante -->
+        <div class="text-center mb-5">
+            <img src="img/dipartimentimedici.jpg" alt="Servizi Centro Medico" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Pulsante -->
+        <div class="pt-2 text-center">
+            <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">
+                Dipartimenti
+            </a>
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
+
+
+
+
 
     <!-- Team Start -->
     <div class="container-fluid py-5">
@@ -267,6 +218,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="pt-2">
+                <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">I nostri specialisti</a>
             </div>
         </div>
     </div>
