@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="pt-2">
-                     <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">Chi siamo</a>
+                     <a href="{{ route('who') }}" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">Chi siamo</a>
                 </div>
             </div>
         </div>
@@ -78,17 +78,13 @@
 
         <!-- Pulsante -->
         <div class="pt-2 text-center">
-            <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">
+            <a href="{{ route('dipartimenti') }}" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">
                 Dipartimenti
             </a>
         </div>
     </div>
 </div>
 <!-- Services End -->
-
-
-
-
 
     <!-- Team Start -->
     <div class="container-fluid py-5">
@@ -154,7 +150,7 @@
                 </div>
             </div>
             <div class="pt-2">
-                <a href="" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">I nostri specialisti</a>
+                <a href="{{ route('specialisti') }}" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">I nostri specialisti</a>
             </div>
         </div>
     </div>
