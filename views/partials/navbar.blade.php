@@ -12,10 +12,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ route('homepage') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Homepage</a>
-                    <a href="{{ route('chisiamo') }}" class="nav-item nav-link {{ Request::is('chisiamo') ? 'active' : '' }}">Chi siamo</a>
+                    <a href="{{ route('who') }}" class="nav-item nav-link {{ Request::is('who') ? 'active' : '' }}">Chi siamo</a>
                     <a href="{{ route('specialisti') }}" class="nav-item nav-link {{ Request::is('specialisti') ? 'active' : '' }}">Specialisti</a>
+
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle {{ Request::is('cardiologia', 'neurologia', 'ortopedia', 'pediatria', 'pneumologia', 'radiologia') ? 'active' : '' }}" data-bs-toggle="dropdown">Dipartimenti</a>
+                        <a href="{{ route('dipartimenti')}}" class="nav-link dropdown-toggle {{ Request::is('cardiologia', 'neurologia', 'ortopedia', 'pediatria', 'pneumologia', 'radiologia') ? 'active' : '' }}" data-bs-toggle="dropdown">Dipartimenti</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{ route('cardiologia') }}" class="dropdown-item">Cardiologia</a>
                             <a href="{{ route('neurologia') }}" class="dropdown-item">Neurologia</a>
@@ -25,6 +26,7 @@
                             <a href="{{ route('radiologia') }}" class="dropdown-item">Radiologia</a>
                         </div>
                     </div>
+
                     <a href="{{ route('login') }}" class="nav-item nav-link {{ Request::is('login') ? 'active' : '' }}">Log in</a>
                 </div>
             </div>
