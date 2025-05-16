@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="pt-2">
-                     <a href="{{ route('who') }}" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">Chi siamo</a>
+                     <a href="{{ route('chisiamo') }}" class="btn rounded-pill py-md-3 px-md-5 mx-2" style="background-color: #00CFE8; color: white;">Chi siamo</a>
                 </div>
             </div>
         </div>
