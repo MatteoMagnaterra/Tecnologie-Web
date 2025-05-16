@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ route('homepage') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Homepage</a>
-                    <a href="{{ route('who') }}" class="nav-item nav-link {{ Request::is('who') ? 'active' : '' }}">Chi siamo</a>
+                    <a href="{{ route('chisiamo') }}" class="nav-item nav-link {{ Request::is('chisiamo') ? 'active' : '' }}">Chi siamo</a>
                     <a href="{{ route('specialisti') }}" class="nav-item nav-link {{ Request::is('specialisti') ? 'active' : '' }}">Specialisti</a>
 
                     <div class="nav-item dropdown">
