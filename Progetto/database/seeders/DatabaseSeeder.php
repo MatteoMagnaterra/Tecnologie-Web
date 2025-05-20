@@ -68,6 +68,38 @@ public function run(): void
         ['idNotifica' => 1, 'utente_id' => 1, 'prenotazione_id' => 1, 'messaggio' => 'La prestazione "Elettrocardiogramma" è stata spostata a mercoledì 21 alle ore 10:00.', 'visualizzato' => false, 'created_at' => now(), 'updated_at' => now()],
         ['idNotifica' => 2, 'utente_id' => 2, 'prenotazione_id' => 2, 'messaggio' => 'La prestazione "Radiografia toracica" è confermata per giovedì 22 alle ore 09:00.', 'visualizzato' => false, 'created_at' => now(), 'updated_at' => now()],
     ]);
+    
+    DB::table('specialisti')->insert([
+        // CARDIOLOGIA
+        ['nome' => 'Luca', 'cognome' => 'Rinaldi', 'dipartimento_id' => 1, 'prestazione_id' => 1],
+        ['nome' => 'Elena', 'cognome' => 'Moretti', 'dipartimento_id' => 1, 'prestazione_id' => 1],
+        ['nome' => 'Giuseppe', 'cognome' => 'Conti', 'dipartimento_id' => 1, 'prestazione_id' => 1],
+
+        // NEUROLOGIA
+        ['nome' => 'Marco', 'cognome' => 'Bianchi', 'dipartimento_id' => 2, 'prestazione_id' => 2],
+        ['nome' => 'Laura', 'cognome' => 'Ferri', 'dipartimento_id' => 2, 'prestazione_id' => 2],
+        ['nome' => 'Alessandro', 'cognome' => 'Greco', 'dipartimento_id' => 2, 'prestazione_id' => 2],
+
+        // ORTOPEDIA
+        ['nome' => 'Federica', 'cognome' => 'Galli', 'dipartimento_id' => 3, 'prestazione_id' => 3],
+        ['nome' => 'Matteo', 'cognome' => 'Colombo', 'dipartimento_id' => 3, 'prestazione_id' => 3],
+        ['nome' => 'Silvia', 'cognome' => 'Romano', 'dipartimento_id' => 3, 'prestazione_id' => 3],
+
+        // PEDIATRIA
+        ['nome' => 'Chiara', 'cognome' => 'Valentini', 'dipartimento_id' => 4, 'prestazione_id' => 4],
+        ['nome' => 'Lorenzo', 'cognome' => 'Marchetti', 'dipartimento_id' => 4, 'prestazione_id' => 4],
+        ['nome' => 'Martina', 'cognome' => 'Bellini', 'dipartimento_id' => 4, 'prestazione_id' => 4],
+
+        // PNEUMOLOGIA
+        ['nome' => 'Riccardo', 'cognome' => 'Fontana', 'dipartimento_id' => 5, 'prestazione_id' => 5],
+        ['nome' => 'Federica', 'cognome' => 'Pini', 'dipartimento_id' => 5, 'prestazione_id' => 5],
+        ['nome' => 'Gabriele', 'cognome' => 'Neri', 'dipartimento_id' => 5, 'prestazione_id' => 5],
+
+        // RADIOLOGIA
+        ['nome' => 'Alessia', 'cognome' => 'Mancini', 'dipartimento_id' => 6, 'prestazione_id' => 6],
+        ['nome' => 'Tommaso', 'cognome' => 'Barone', 'dipartimento_id' => 6, 'prestazione_id' => 6],
+        ['nome' => 'Elisa', 'cognome' => 'Ferretti', 'dipartimento_id' => 6, 'prestazione_id' => 6],
+        ]);
 }
 
 }
