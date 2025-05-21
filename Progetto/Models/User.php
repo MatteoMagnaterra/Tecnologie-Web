@@ -11,16 +11,22 @@ class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
-
+    
+    protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
      * @var list<string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'nome', 
+        'cognome', 
+        'ruolo', 
+        'username', 
+        'password', 
+        'indirizzo', 
+        'citta', 
+        'data_di_nascita',
     ];
 
     /**
@@ -44,5 +50,10 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+    
+    public function hasRole($role): bool {
+        $roles = (array) $role;
+        return in_array($this->role, $roles);
     }
 }
