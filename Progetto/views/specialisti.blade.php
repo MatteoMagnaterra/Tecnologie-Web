@@ -2,6 +2,10 @@
 
 @section('title', 'Specialisti - Health Center')
 
+@section('navbar')
+    @include('partials.navbar') {{-- Qui metti la navbar standard --}}
+@endsection
+
 @section('content')
 <!-<!-- About Start -->
 <div class="container-fluid py-5">
@@ -33,43 +37,33 @@
     <!-- Services Start -->
     <div class="container py-5">
             <div class="mx-auto" style="width: 100%; max-width: 600px;">
-                <div class="input-group">
-                    <input type="text" class="form-control border-primary w-50" placeholder="Cerca specialista">
-                    <button class="btn btn-dark border-0 w-25">Cerca</button>
-                </div>
+                <form method="GET" action="{{ route('specialisti') }}" class="container py-5">
+                    <div class="mx-auto" style="width: 100%; max-width: 600px;">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control border-primary w-50" placeholder="Cerca specialista" value="{{ request('search') }}">
+                            <button type="submit" class="btn btn-dark border-0 w-25">Cerca</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            </div>
-    <!--elenco specialisti-->
+    </div>
+    
+    <!--elenco specialisti dinamico-->
 <div style="font-family: Arial, sans-serif; padding: 20px;">
-    <h2 style="color: black; margin-top: 40px;">CARDIOLOGIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Luca Rinaldi</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Elena Moretti</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Giuseppe Conti</p>
-    
-    <h2 style="color: black;">NEUROLOGIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Marco Bianchi</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Laura Ferri</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Alessandro Greco</p>
-    
-    <h2 style="color: black; margin-top: 40px;">ORTOPEDIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Federica Galli</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Matteo Colombo</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Silvia Romano</p>
-    
-    <h2 style="color: black; margin-top: 40px;">PEDIATRIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Chiara Valentini</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Lorenzo Marchetti</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Martina Bellini</p>
-    
-    <h2 style="color: black; margin-top: 40px;">PNEUMOLOGIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Riccardo Fontana</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Federica Pini</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Gabriele Neri</p>
+    @php
+        $gruppati = $specialisti->groupBy(fn($s) => $s->dipartimento->nome ?? 'Senza dipartimento');
+    @endphp
 
-    <h2 style="color: black; margin-top: 40px;">RADIOLOGIA</h2>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Alessia Mancini</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Tommaso Barone</p>
-    <p style="color: #00CFE8;"><i class="fas fa-user-md" style="margin-right: 6px;"></i>Dott. Elisa Ferretti</p>
+    @foreach($gruppati as $nomeDipartimento => $medici)
+        <h2 style="color: black; margin-top: 40px;">{{ strtoupper($nomeDipartimento) }}</h2>
+        @foreach($medici as $medico)
+            <p style="color: #00CFE8;">
+                <i class="fas fa-user-md" style="margin-right: 6px;"></i>
+                Dott. {{ $medico->nome }} {{ $medico->cognome }}
+            </p>
+        @endforeach
+    @endforeach
 </div>
+
 
 @endsection
