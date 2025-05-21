@@ -26,7 +26,7 @@
 
 <body>
 
-    @include('partials.navbar')
+    @yield('navbar')   {{-- Ogni pagina può definire la sua navbar --}}
 
     <main>
         @yield('content')
