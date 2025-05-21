@@ -2,6 +2,10 @@
 
 @section('title', 'Dipartimenti - Health Center')
 
+@section('navbar')
+    @include('partials.navbar') {{-- Qui metti la navbar standard --}}
+@endsection
+
 @section('content')
 <!-- Services Start -->
 <div class="container-fluid py-5">
@@ -27,8 +31,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <h4 class="mb-3">{{ $dip->nome }}</h4>
-                        <p>{{ $dip->descrizione }}</p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="#">
+                        <a class="btn btn-lg btn-primary rounded-pill" href="{{ route('dipartimenti1', ['id' => $dip->idDip]) }}">
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
