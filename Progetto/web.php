@@ -17,10 +17,6 @@ Route::get('/dipartimenti/{id}', [DipartimentiController::class, 'show'])
         ->name('dipartimenti1');
 Route::get('/prestazione/{id}', [DipartimentiController::class, 'mostraPre'])
         ->name('prestazioni');
-Route::view('/cardiologia', 'cardiologia')->name('cardiologia');
-Route::view('/neurologia', 'neurologia')->name('neurologia');
-Route::view('/ortopedia', 'ortopedia')->name('ortopedia');
-Route::view('/pediatria', 'pediatria')->name('pediatria');
-Route::view('/pneumologia', 'pneumoglia')->name('pneumologia');
-Route::view('/radiologia', 'radiologia')->name('radiologia');
-Route::view('/login', 'login')->name('login');
+
+// Autenticazione (carica tutte le rotte da auth.php)
+require __DIR__.'/auth.php';
