@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-<!-<!-- About Start -->
+<!-- About Start -->
 <div class="container-fluid py-5">
     <div class="container">
         <div class="row gx-5">
