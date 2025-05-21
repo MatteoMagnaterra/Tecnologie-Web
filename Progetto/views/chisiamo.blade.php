@@ -2,6 +2,10 @@
 
 @section('title', 'Chi siamo - Health Center')
 
+@section('navbar')
+    @include('partials.navbar') {{-- Qui metti la navbar standard --}}
+@endsection
+
 @section('content')
     <!-- About Start -->
     <div class="container-fluid py-5">
