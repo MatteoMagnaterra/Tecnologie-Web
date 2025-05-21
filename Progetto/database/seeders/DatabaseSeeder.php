@@ -15,21 +15,21 @@ class DatabaseSeeder extends Seeder
 public function run(): void
 {
     DB::table('utenti')->insert([
-            ['nome' => 'Mario', 'cognome' => 'Rossi', 'indirizzo' => 'Via Roma 1', 'citta' => 'Ancona', 'data_di_nascita' => '1980-01-15', 'username' => 'mrossi', 'password' => 'B7x@tP9!qLz3', 'ruolo' => 'user'],
-            ['nome' => 'Luisa', 'cognome' => 'Bianchi', 'indirizzo' => 'Via Milano 2', 'citta' => 'Ancona', 'data_di_nascita' => '1992-03-21', 'username' => 'lbianchi', 'password' => 'R2#yKm8$sVw9', 'ruolo' => 'user'],
-            ['nome' => 'Giovanni', 'cognome' => 'Verdi', 'indirizzo' => 'Via Napoli 3', 'citta' => 'Jesi', 'data_di_nascita' => '1975-08-09', 'username' => 'gverdi', 'password' => 'Xe5!bT2@Lu1q', 'ruolo' => 'staff'],
-            ['nome' => 'Sara', 'cognome' => 'Neri', 'indirizzo' => 'Via Firenze 10', 'citta' => 'Osimo', 'data_di_nascita' => '1985-12-01', 'username' => 'sneri', 'password' => 'W4^mZn7!Tk8p', 'ruolo' => 'staff'],
-            ['nome' => 'Elena', 'cognome' => 'Moretti', 'indirizzo' => 'Via Venezia 8', 'citta' => 'Senigallia', 'data_di_nascita' => '1990-06-05', 'username' => 'emoretti', 'password' => 'J9@aYc3#Qw6z', 'ruolo' => 'user'],
-            ['nome' => 'Paolo', 'cognome' => 'Ferrari', 'indirizzo' => 'Via Genova 11', 'citta' => 'Ancona', 'data_di_nascita' => '1983-02-17', 'username' => 'pferrari', 'password' => 'Pv2$Mz8*Nk7d', 'ruolo' => 'staff'],
-            ['nome' => 'Chiara', 'cognome' => 'Galli', 'indirizzo' => 'Via Palermo 6', 'citta' => 'Jesi', 'data_di_nascita' => '1996-09-30', 'username' => 'cgalli', 'password' => 'Ht3!Xy6@Lj4r', 'ruolo' => 'user'],
-            ['nome' => 'Andrea', 'cognome' => 'Fontana', 'indirizzo' => 'Via Torino 3', 'citta' => 'Fabriano', 'data_di_nascita' => '1978-11-11', 'username' => 'afontana', 'password' => 'Lk5@Zm2#Wt9s', 'ruolo' => 'staff'],
-            ['nome' => 'Lucia', 'cognome' => 'Rinaldi', 'indirizzo' => 'Via Trieste 5', 'citta' => 'Osimo', 'data_di_nascita' => '1989-07-22', 'username' => 'lrinaldi', 'password' => 'Df8!Wb3^Vu6p', 'ruolo' => 'user'],
-            ['nome' => 'Marco', 'cognome' => 'Conti', 'indirizzo' => 'Via Bologna 1', 'citta' => 'Ancona', 'data_di_nascita' => '1984-10-04', 'username' => 'mconti', 'password' => 'Qz7$Lk1@Xp5m', 'ruolo' => 'staff'],
-            ['nome' => 'Giulia', 'cognome' => 'De Luca', 'indirizzo' => 'Via Bari 14', 'citta' => 'Loreto', 'data_di_nascita' => '1995-04-12', 'username' => 'gdeluca', 'password' => 'Ae4#Rm9!Qy2n', 'ruolo' => 'user'],
-            ['nome' => 'Francesco', 'cognome' => 'Mariani', 'indirizzo' => 'Via Pisa 22', 'citta' => 'Senigallia', 'data_di_nascita' => '1993-01-07', 'username' => 'fmariani', 'password' => 'Mb3^Vz5!Kt6q', 'ruolo' => 'staff'],
-            ['nome' => 'Alessia', 'cognome' => 'Gentili', 'indirizzo' => 'Via Como 19', 'citta' => 'Ancona', 'data_di_nascita' => '1997-05-03', 'username' => 'agentili', 'password' => 'Uo6!Wy2$Nl7c', 'ruolo' => 'user'],
-            ['nome' => 'Davide', 'cognome' => 'Serra', 'indirizzo' => 'Via Latina 2', 'citta' => 'Camerano', 'data_di_nascita' => '1987-12-28', 'username' => 'dserra', 'password' => 'Tz9@Xf4#Mv3r', 'ruolo' => 'staff'],
-            ['nome' => 'Laura', 'cognome' => 'Bellini', 'indirizzo' => 'Via Salerno 9', 'citta' => 'Falconara', 'data_di_nascita' => '1991-08-18', 'username' => 'lbellini', 'password' => 'Cr1^Pt6!Lq8b', 'ruolo' => 'admin'],
+            ['nome' => 'Mario', 'cognome' => 'Rossi', 'indirizzo' => 'Via Roma 1', 'citta' => 'Ancona', 'data_di_nascita' => '1980-01-15', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Luisa', 'cognome' => 'Bianchi', 'indirizzo' => 'Via Milano 2', 'citta' => 'Ancona', 'data_di_nascita' => '1992-03-21', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Giovanni', 'cognome' => 'Verdi', 'indirizzo' => 'Via Napoli 3', 'citta' => 'Jesi', 'data_di_nascita' => '1975-08-09', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Sara', 'cognome' => 'Neri', 'indirizzo' => 'Via Firenze 10', 'citta' => 'Osimo', 'data_di_nascita' => '1985-12-01', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Elena', 'cognome' => 'Moretti', 'indirizzo' => 'Via Venezia 8', 'citta' => 'Senigallia', 'data_di_nascita' => '1990-06-05', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Paolo', 'cognome' => 'Ferrari', 'indirizzo' => 'Via Genova 11', 'citta' => 'Ancona', 'data_di_nascita' => '1983-02-17', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Chiara', 'cognome' => 'Galli', 'indirizzo' => 'Via Palermo 6', 'citta' => 'Jesi', 'data_di_nascita' => '1996-09-30', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Andrea', 'cognome' => 'Fontana', 'indirizzo' => 'Via Torino 3', 'citta' => 'Fabriano', 'data_di_nascita' => '1978-11-11', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Lucia', 'cognome' => 'Rinaldi', 'indirizzo' => 'Via Trieste 5', 'citta' => 'Osimo', 'data_di_nascita' => '1989-07-22', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Marco', 'cognome' => 'Conti', 'indirizzo' => 'Via Bologna 1', 'citta' => 'Ancona', 'data_di_nascita' => '1984-10-04', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Giulia', 'cognome' => 'De Luca', 'indirizzo' => 'Via Bari 14', 'citta' => 'Loreto', 'data_di_nascita' => '1995-04-12', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Francesco', 'cognome' => 'Mariani', 'indirizzo' => 'Via Pisa 22', 'citta' => 'Senigallia', 'data_di_nascita' => '1993-01-07', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Alessia', 'cognome' => 'Gentili', 'indirizzo' => 'Via Como 19', 'citta' => 'Ancona', 'data_di_nascita' => '1997-05-03', 'username' => 'pazipazi', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'user'],
+            ['nome' => 'Davide', 'cognome' => 'Serra', 'indirizzo' => 'Via Latina 2', 'citta' => 'Camerano', 'data_di_nascita' => '1987-12-28', 'username' => 'staffstaff', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'staff'],
+            ['nome' => 'Laura', 'cognome' => 'Bellini', 'indirizzo' => 'Via Salerno 9', 'citta' => 'Falconara', 'data_di_nascita' => '1991-08-18', 'username' => 'adminadmin', 'password' => Hash::make('mLqMmLqM'), 'ruolo' => 'admin'],
         ]);
     
     DB::table('dipartimenti')->insert([
