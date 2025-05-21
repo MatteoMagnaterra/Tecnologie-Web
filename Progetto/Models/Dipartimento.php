@@ -11,4 +11,15 @@ class Dipartimento extends Model
     public $timestamps = true;
 
     protected $fillable = ['nome', 'descrizione'];
+    
+     public function prestazioni()
+    {
+        return $this->hasMany(Prestazione::class, 'dipartimento_id', 'idDip');
+    }
+    
+    public function specialisti()
+    {
+         return $this->hasMany(Specialista::class, 'dipartimento_id', 'idDip');
+    }
+
 }
