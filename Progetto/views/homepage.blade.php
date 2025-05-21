@@ -2,6 +2,10 @@
 
 @section('title', 'Homepage - Health Center')
 
+@section('navbar')
+    @include('partials.navbar') {{-- Qui metti la navbar standard --}}
+@endsection
+
 @section('content')
     <!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
@@ -104,11 +108,6 @@
                                 <h3>Dott. Scansani Elia</h3>
                                 <h6 class="fw-normal fst-italic text-primary mb-4">Cardiologia</h6>
                             </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,11 +121,6 @@
                                 <h3>Dott. Magnaterra Matteo</h3>
                                 <h6 class="fw-normal fst-italic text-primary mb-4">Ortopedia</h6>
                             </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -139,11 +133,6 @@
                             <div class="mt-auto p-4">
                                 <h3>Dott. Tribulini Benedetta</h3>
                                 <h6 class="fw-normal fst-italic text-primary mb-4">Neurologia</h6>
-                            </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
